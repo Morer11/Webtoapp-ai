@@ -1,0 +1,73 @@
+# Exported from Render on 2025-06-23T17:09:22Z
+services:
+- type: web
+  name: Webtoapp-ai
+  runtime: node
+  repo: https://github.com/Morer11/Webtoapp-ai
+  plan: free
+  envVars:
+  - key: GA_TRACKING_ID
+    sync: false
+  - key: BASE_URL
+    sync: false
+  - key: RATE_LIMIT_MAX_REQUESTS
+    sync: false
+  - key: RATE_LIMIT_WINDOW_MS
+    sync: false
+  - key: CORS_ORIGINS
+    sync: false
+  - key: LOG_LEVEL
+    sync: false
+  - key: MAINTENANCE_MODE
+    sync: false
+  - key: REGISTRATION_ENABLED
+    sync: false
+  - key: EMAIL_VERIFICATION_ENABLED
+    sync: false
+  - key: BACKUP_RETENTION
+    sync: false
+  - key: BACKUP_INTERVAL
+    sync: false
+  - key: BACKUP_ENABLED
+    sync: false
+  - key: FROM_NAME
+    sync: false
+  - key: FROM_EMAIL
+    sync: false
+  - key: UPLOAD_DIR
+    sync: false
+  - key: MAX_FILE_SIZE
+    sync: false
+  - key: BNB_BSC_ADDRESS
+    sync: false
+  - key: BTC_ADDRESS
+    sync: false
+  - key: USDT_TRC20_ADDRESS
+    sync: false
+  - key: ADMIN_EMAIL
+    sync: false
+  - key: NODE_ENV
+    sync: false
+  - key: PORT
+    sync: false
+  - key: SESSION_SECRET
+    sync: false
+  - key: OPENAI_API_KEY
+    sync: false
+  - key: PGDATABASE
+    sync: false
+  - key: PGUSER
+    sync: false
+  - key: PGPORT
+    sync: false
+  - key: PGHOST
+    sync: false
+  - key: DATABASE_URL
+    sync: false
+  - key: SENDGRID_API_KEY
+    sync: false
+  region: oregon
+  buildCommand: npm install; npm run build
+  startCommand: npm run start
+  autoDeployTrigger: commit
+version: "1"
